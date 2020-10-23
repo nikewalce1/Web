@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/cock.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="radius"></div>
+<div class="radius1"></div>
+<div class="radius2"></div>
+<div class="radius7 transition"></div>
+<div class="radius8 transition"></div>
+<div class="radius5 transition"></div>
+<div class="radius6 transition"></div>
+<div class="radius3 transition "></div>
+<div class="radius4 transition"></div>
+<div class="rec" id="re"></div>
+<div class="rec1" id="re1"></div>
+<div class="rec2" id="re2"></div>
+<div class="rec3" id="re3"></div>
+<div class="radius9" id="click" onclick="change_color('re,re1,re2,re3','#ff0e3e')"></div>
+<div class="oval"></div>
+<div class="oval1"></div>
+<div class="oval2"></div>
+<div class="oval3"></div>
+<div class="oval4"></div>
+<div class="oval5"></div>
+<div class="trap"></div>
+<div class="trap1"></div>
+<div class="tri"></div>
+<div class="tri1"></div>
+<div class="tri2"></div>
+<div class="tri3"></div>
+<div class="oval6"></div>
+<div class="tri4"></div>
+<div class="radius10"></div>
+
+<script>
+    function change_color(elem, color) {
+        elem.split(',').forEach(function(el){
+            document.getElementById(el).style.background = color;
+        })
+    }
+</script>
+</body>
+</html>
