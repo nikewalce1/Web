@@ -1,0 +1,180 @@
+.path {
+  stroke-dasharray: 100000;
+  stroke-dashoffset: 100000;
+  animation: dash 30s linear;
+  animation-fill-mode: forwards; }
+
+#path1 {
+  animation-delay: 10s; }
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100000; }
+  to {
+    stroke-dashoffset: 0; } }
+
+nav {
+  position: fixed;
+  top: 0; }
+
+@keyframes mouthMove {
+  0% {
+    top: 25px; }
+  50% {
+    top: 30px; }
+  100% {
+    top: 35px; } }
+
+@keyframes FrontlegMove {
+  0% {
+    bottom: 15px; }
+  50% {
+    bottom: 0px; }
+  100% {
+    bottom: -15px; } }
+
+@keyframes BacklegMove {
+  0% {
+    bottom: -15px; }
+  50% {
+    bottom: 0px; }
+  100% {
+    bottom: 5px; } }
+
+@keyframes HandMove {
+  0% {
+    bottom: 55px;
+    right: 16px; }
+  50% {
+    bottom: 50px;
+    right: 17px; }
+  100% {
+    bottom: 60px;
+    right: 19px; } }
+
+@keyframes floorMove {
+  0% {
+    left: 200%; }
+  50% {
+    left: 0; }
+  100% {
+    left: -200%; } }
+
+.content {
+  width: 150px;
+  height: 150px;
+  margin: 200px;
+  position: relative;
+  overflow: hidden; }
+  .content .body {
+    max-width: 100%; }
+  .content .mouth {
+    position: absolute;
+    top: 35px;
+    left: 55%;
+    animation: alternate-reverse .25s mouthMove infinite; }
+  .content .frontleg {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    animation: alternate-reverse .10s FrontlegMove infinite; }
+  .content .backleg {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    animation: alternate-reverse .10s BacklegMove infinite; }
+  .content .hand {
+    position: absolute;
+    bottom: 50px;
+    right: 17px;
+    animation: alternate-reverse .30s HandMove infinite; }
+  .content .floor {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    animation: linear 3s floorMove infinite; }
+    .content .floor .dots, .content .floor .dots0, .content .floor .dots1, .content .floor .dots2, .content .floor .dots3, .content .floor .dots4, .content .floor .dots5, .content .floor .dots6, .content .floor .dots7, .content .floor .dots8, .content .floor .dots9, .content .floor .dots10, .content .floor .dots11, .content .floor .dots12, .content .floor .dots13, .content .floor .dots14, .content .floor .dots15 {
+      width: 5px;
+      height: 5px;
+      background: #555555;
+      position: absolute; }
+    .content .floor .dots0 {
+      left: 0px; }
+    .content .floor .dots1 {
+      left: 15px; }
+    .content .floor .dots2 {
+      left: 30px; }
+    .content .floor .dots3 {
+      left: 45px; }
+    .content .floor .dots4 {
+      left: 60px; }
+    .content .floor .dots5 {
+      left: 75px; }
+    .content .floor .dots6 {
+      left: 90px; }
+    .content .floor .dots7 {
+      left: 105px; }
+    .content .floor .dots8 {
+      left: 120px; }
+    .content .floor .dots9 {
+      left: 135px; }
+    .content .floor .dots10 {
+      left: 150px; }
+    .content .floor .dots11 {
+      left: 165px; }
+    .content .floor .dots12 {
+      left: 180px; }
+    .content .floor .dots13 {
+      left: 195px; }
+    .content .floor .dots14 {
+      left: 210px; }
+    .content .floor .dots15 {
+      left: 225px; }
+
+@keyframes moveText {
+  0% {
+    left: 50%;
+    transform: translateX(-50%); }
+  100% {
+    left: 50px; } }
+
+@keyframes textMove {
+  0% {
+    left: 50px; }
+  100% {
+    left: 50%;
+    transform: translateX(-50%); } }
+
+.box {
+  background: #9FCB51;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  padding: 50px;
+  position: relative; }
+  .box .text {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Arial";
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    transition: .15s;
+    animation: linear 1s moveText; }
+  .box .Input {
+    background: #382c41;
+    width: 400px;
+    display: block;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    transition: 3s; }
+
+.Input:focus + p {
+  animation: linear 1s textMove;
+  animation-fill-mode: forwards; }
+
+
