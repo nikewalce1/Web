@@ -1,0 +1,330 @@
+
+.radius {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 10em;
+  height: 5em;
+  border: 2px solid #313030;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: #313030;
+  margin: 300px;
+  transform: rotate(-7deg);
+}
+
+.radius1 {
+  width: 7em;
+  height: 3.5em;
+  border: 2px solid #3e3e3e;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: #3e3e3e;
+  margin-top: 300px;
+  margin-left: 330px;
+  transform: rotate(-7deg);
+  position: absolute;
+}
+.radius2 {
+  width: 5em;
+  height: 2.5em;
+  border: 2px solid #4b4b4b;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  background: #4b4b4b;
+  margin-top: 300px;
+  margin-left: 350px;
+  transform: rotate(-7deg);
+  position: absolute;
+}
+.radius3 {
+  width: 3em;
+  height: 6em;
+  border: 2px solid #313030;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #313030;
+  margin-top: 220px;
+  margin-left: 280px;
+  transform: rotate(-20deg);
+  position: absolute;
+}
+.radius4 {
+  width: 2em;
+  height: 4em;
+  border: 2px solid #3e3e3e;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #3e3e3e;
+  margin-top: 245px;
+  margin-left: 285px;
+  transform: rotate(-20deg);
+  position: absolute;
+}
+.radius3:hover{
+  transform: skewX(30deg);
+  transition-duration:3s;
+}
+.radius4:hover{
+  transform: skewX(30deg);
+  transition-duration:3s;
+}
+.radius5:hover{
+  transform: skewX(30deg);
+  transition-duration:3s;
+}
+.radius6:hover{
+  height: 5em;
+  transition-duration:3s;
+}
+.radius7:hover{
+  height: 5em;
+  transition-duration:3s;
+}
+.radius8:hover{
+  height: 5em;
+  transition-duration:3s;
+}
+.transition{
+  transition: 3s;
+}
+.radius5 {
+  width: 3em;
+  height: 6em;
+  border: 2px solid #6a6868;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #6a6868;
+  margin-top: 220px;
+  margin-left: 250px;
+  transform: rotate(-50deg);
+  position: absolute;
+}
+.radius6 {
+  width: 2em;
+  height: 4em;
+  border: 2px solid #7f7d7d;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #7f7d7d;
+  margin-top: 230px;
+  margin-left: 240px;
+  transform: rotate(-50deg);
+  position: absolute;
+}
+.radius7 {
+  width: 3em;
+  height: 6em;
+  border: 2px solid #313030;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #313030;
+  margin-top: 250px;
+  margin-left: 240px;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.radius8 {
+  width: 2em;
+  height: 4em;
+  border: 2px solid #3e3e3e;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #3e3e3e;
+  margin-top: 273px;
+  margin-left: 240px;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.radius9 {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 2em;
+  height: 2em;
+  border: 2px solid #101010;
+  border-radius: 65% 50% 60% 50%;
+  background: #101010;
+  margin-top: 355px;
+  margin-left:355px;
+  transform: rotate(-7deg);
+}
+.rec{
+  position: absolute;
+  width: 2em;
+  height: 5px;
+  background: #ffbc0e;
+  margin-top: 400px;
+  margin-left:355px;
+  transform: rotate(90deg);
+}
+
+.rec1{
+  position: absolute;
+  width: 2em;
+  height: 5px;
+  background: #ffbc0e;
+  margin-top: 400px;
+  margin-left:370px;
+  transform: rotate(70deg);
+}
+
+.rec2{
+  position: absolute;
+  width: 1.5em;
+  height: 5px;
+  background: #ffbc0e;
+  margin-top: 418px;
+  margin-left:360px;
+  transform: rotate(10deg);
+}
+
+.rec3{
+  position: absolute;
+  width: 1.5em;
+  height: 5px;
+  background: #ffbc0e;
+  margin-top: 415px;
+  margin-left:380px;
+  transform: rotate(-10deg);
+}
+.tri{
+  position: absolute;
+  width:2px;
+  height: 3px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #101010;
+  margin-top: 266px;
+  margin-left: 378px;
+  transform: rotate(-7deg);
+}
+.tri1{
+  position: absolute;
+  width:2px;
+  height: 3px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #101010;
+  margin-top: 264px;
+  margin-left: 397px;
+  transform: rotate(-7deg);
+}
+.tri2{
+  position: absolute;
+  width:2px;
+  height: 3px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #101010;
+  margin-top: 262px;
+  margin-left: 416px;
+  transform: rotate(-7deg);
+}
+.tri3{
+  position: absolute;
+  width:2px;
+  height: 3px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #101010;
+  margin-top: 260px;
+  margin-left: 435px;
+  transform: rotate(-7deg);
+}
+.trap{
+  position: absolute;
+  border-bottom: 79px solid #a7a2a2;
+  border-right: 50px solid transparent;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  margin-top: 158px;
+  margin-left: 310px;
+  transform: rotate(-97deg);
+}
+.trap1{
+  position: absolute;
+  border-bottom: 60px solid #c2bebe;
+  border-right: 50px solid transparent;
+  border-radius: 10px;
+  height: 10px;
+  width: 70px;
+  margin-top: 200px;
+  margin-left: 357px;
+  transform: rotate(-97deg);
+}
+.oval{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 123px;
+  margin-left: 405px;
+  transform: rotate(-97deg);
+}
+.oval1{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 134px;
+  margin-left: 392px;
+  transform: rotate(-97deg);
+}
+.oval2{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 142px;
+  margin-left: 382px;
+  transform: rotate(-97deg);
+}
+.oval3{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 153px;
+  margin-left: 369px;
+  transform: rotate(-97deg);
+}
+.oval4{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 161px;
+  margin-left: 356px;
+  transform: rotate(-97deg);
+}
+.oval5{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 169px;
+  margin-left: 343px;
+  transform: rotate(-97deg);
+}
+.oval6{
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  background: #db2a3f;
+  border-radius: 100px/50px;
+  margin-top: 210px;
+  margin-left: 420px;
+  transform: rotate(-97deg);
+}
+.radius10{
+  width: 20px;
+  height: 40px;
+  border: 2px solid #db2a3f;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #db2a3f;
+  margin-top: 180px;
+  margin-left: 425px;
+  transform: rotate(170deg);
+  position: absolute;
+}
+.tri4{
+  position: absolute;
+  width:2px;
+  height: 3px;
+  border: 5px solid transparent;
+  border-bottom: 15px solid #ffbc0e;
+  margin-top: 180px;
+  margin-left: 450px;
+  transform: rotate(77deg);
+}
