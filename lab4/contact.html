@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Зоомагазин</title>
+    <meta name="description" content="Что-то">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<header>
+    <nav class="header container df">
+        <a href="index.html" class="header-logo">Zoo</a>
+        <ul class="header-nav df">
+            <li class="header-nav-item">
+                <a class="header-nav-link " href="index.html">Домашняя</a>
+            </li>
+            <li class="header-nav-item">
+                <a class="header-nav-link" href="products.html">Товары</a>
+            </li>
+            <li class="header-nav-item">
+                <a class="header-nav-link" href="Order.html">Заказ</a>
+            </li>
+            <li class="header-nav-item">
+                <a class="header-nav-link active" href="contact.html">Корзина</a>
+            </li>
+        </ul>
+        <button class="btn-mobile-menu">
+        </button>
+    </nav>
+</header>
+<main>
+    <section class="main-section order ">
+        <div class="container df ">
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+                        <form action="/action_page.php">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <h3>Платежный адрес</h3>
+                                    <label for="fname"><i class="fa fa-user"></i> Ф.И.О</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Васильев Д. А.">
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="text" id="email" name="email" placeholder="danil123461@yandex.ua">
+                                    <label for="adr"><i class="fa fa-address-card-o"></i> Адрес</label>
+                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                    <label for="city"><i class="fa fa-institution"></i> Город</label>
+                                    <input type="text" id="city" name="city" placeholder="Горловка">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">Область</label>
+                                            <input type="text" id="state" name="state" placeholder="Донецкая">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip">Индекс</label>
+                                            <input type="text" id="zip" name="zip" placeholder="10001">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50">
+                                    <h3>Оплата</h3>
+                                    <label for="fname">Картой</label>
+                                    <div class="icon-container">
+                                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                    </div>
+                                    <label for="cname">Карта</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="Васильев Данил">
+                                    <label for="ccnum">Номер карты</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="Ноябрь">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear" placeholder="2020">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Отправлять новости по email
+                            </label>
+                            <input type="submit" value="Продолжить оплату" class="btn">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-25">
+                    <div class="container">
+                        <h4>Товары
+                            <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+                        </h4>
+                        <p><a href="#">Товар 1</a> <span class="price">100р</span></p>
+                        <p><a href="#">Товар 2</a> <span class="price">150р</span></p>
+                        <p><a href="#">Товар 3</a> <span class="price">100р</span></p>
+                        <p><a href="#">Товар 4</a> <span class="price">150р</span></p>
+                        <hr>
+                        <p>Всего <span class="price" style="color:black"><b>500р</b></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class ="footer df">
+    <p class="footer-p df">Лабораторная работа №4 Васильев ИВТ-2</p>
+</footer>
+<script src="./js/jquery.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
